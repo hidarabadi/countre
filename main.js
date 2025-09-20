@@ -7,15 +7,16 @@ fetch("https://restcountries.com/v3.1/all?fields=name,capital,flags,population,r
     data.forEach((value) => {
         countri.innerHTML += `<li>
         <div>
-<img src=${value.flags.png} alt="">        
+        <img src=${value.flags.png} alt="">        
         </div>
         <div>
         <span>${value.name.common}</span>
          <p>popolashan:${value.population} </p>
-        <p>ragen:${value.ragion}</p>
+        <p>ragen:${value.ragen}</p>
         <p>capital: ${value.capital[0]}</p>
         </div>
         </li>`
 
     })
+     
 })

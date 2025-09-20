@@ -15,3 +15,11 @@ font-size: 20px;
 transform: rotate(360deg);
 
 }
+li{
+    cursor: pointer;
+}
+
+img{
+width: 250px;
+height: 150px;
+}
