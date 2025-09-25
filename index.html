@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
     <meta charset="UTF-8">
@@ -8,16 +8,28 @@
     <link rel="stylesheet" href="output.css">
 </head>
 
-<body class="flex flex-col h-screen bg-gray-800">
-    <header class="bg-[#2B3945] flex justify-between p-[30px] text-white shadow-2xl shadow-gray-400">
+<body class="flex flex-col h-screen bg-[#fff] dark:bg-gray-800 dark:text-white ">
+    <header
+        class="dark:bg-[#2B3945] bg-[#8cafce] flex justify-between p-[30px] text-white shadow-2xl shadow-gray-400 gap-[20px]">
         <p class="font-bold text-[18px]">Where in the world?</p>
-        <button class="cursor-pointer border-none flex gap-[5px] text-[16px] font-bold"><svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
-                <path fill="" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M9.353 3C5.849 4.408 3 7.463 3 11.47A9.53 9.53 0 0 0 12.53 21c4.007 0 7.062-2.849 8.47-6.353C8.17 17.065 8.14 8.14 9.353 3z" />
-            </svg> Light Mode</button>
+        <div class="flex gap-[25px]">
+
+            <button id="Light" class="cursor-pointer border-none flex gap-[5px] text-[16px] font-bold"><svg
+                    width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                    <path fill="" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9.353 3C5.849 4.408 3 7.463 3 11.47A9.53 9.53 0 0 0 12.53 21c4.007 0 7.062-2.849 8.47-6.353C8.17 17.065 8.14 8.14 9.353 3z" />
+                </svg> Light Mode</button>
+            <button id="dark" class="cursor-pointer border-none flex gap-[5px] text-[16px] font-bold"><svg width="800px"
+                    height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                    <path fill="" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9.353 3C5.849 4.408 3 7.463 3 11.47A9.53 9.53 0 0 0 12.53 21c4.007 0 7.062-2.849 8.47-6.353C8.17 17.065 8.14 8.14 9.353 3z" />
+                </svg> dark Mode</button>
+        </div>
+
     </header>
     <main class="">
-        <ul id="countri" class="flex gap-[40px] flex-wrap text-white p-[30px] justify-center items-center"></ul>
+        <ul id="countri"
+            class="flex gap-[40px] flex-wrap dark:text-white text-black p-[30px] justify-center items-center"></ul>
     </main>
     <script src="main.js"></script>
 </body>

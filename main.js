@@ -1,4 +1,6 @@
 const countri = document.getElementById("countri");
+const Light = document.getElementById("Light");
+const dark = document.getElementById("dark");
 
 fetch("https://restcountries.com/v3.1/all?fields=name,capital,flags,population,region,cca3"
 ).then((res) => {
@@ -18,5 +20,14 @@ fetch("https://restcountries.com/v3.1/all?fields=name,capital,flags,population,r
         </li>`
 
     })
-     
+
+});
+dark.addEventListener("click", () =>{
+document.documentElement.classList.add("dark")
+
 })
+Light.addEventListener("click", () =>{
+document.documentElement.classList.remove("dark")
+
+})
+

@@ -1,25 +1,34 @@
 @import "tailwindcss";
 
-svg{
-width: 20px;
-height: 20px;
+@custom-variant dark (&:where(.dark, .dark *));
+
+svg {
+    width: 20px;
+    height: 20px;
 }
 
-button{
-transition: all 0.3s linear;
+button {
+    transition: all 0.3s linear;
 
 }
 
-button:hover{
-font-size: 20px;
-transform: rotate(360deg);
+    
+
+
+
+button:hover {
+    font-size: 20px;
+    transform: rotate(360deg);
 
 }
-li{
+
+li {
     cursor: pointer;
 }
 
-img{
-width: 250px;
-height: 150px;
+img {
+    width: 250px;
+    height: 150px;
+    border-radius: 4px;
+
 }
